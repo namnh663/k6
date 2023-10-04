@@ -32,13 +32,15 @@ export default function () {
 
 In this script:
 
-1. We import the necessary modules from K6 and define the test options.
+1. I import the necessary modules from K6 and define the test options.
 2. The `options` object specifies the load testing stages. In this example, it starts with 30 virtual users, maintains it for 3 minutes, and then ramps down to 0 virtual users over 1 minute.
-3. We define a function that represents the test scenario for retrieving airport information by ID.
+3. I define a function that represents the test scenario for retrieving airport information by ID.
 4. Within the scenario, we generate a random airport ID or specify a range of IDs you want to test.
-5. We make an HTTP GET request to the API with the generated airport ID.
-6. We use the `check` function to validate that the response status code is 200, indicating a successful request.
-7. We add a short sleep between requests to simulate user think time.
+5. I make an HTTP GET request to the API with the generated airport ID.
+6. I use the `check` function to validate that the response status code is 200, indicating a successful request.
+7. I add a short sleep between requests to simulate user think time.
+
+Run using VS Code Extension: https://marketplace.visualstudio.com/items?itemName=k6.k6
 
 Result:
 
